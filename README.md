@@ -8,7 +8,7 @@ Before compiling, clone or download this project zip/tar file and direct yoursel
 
 #### To Compile on Windows:
 Open command prompt and navigate to this director.
-Type the command "<code>javac .\src\\*.java -d .\target\</code>
+Type the command "<code>javac .\src\\*.java -d .\target\</code>"
 This should create a target folder containing class files.
 #### To Run on Windows:
 Simply next run the command "<code>java -cp .\target\ Driver</code>"
