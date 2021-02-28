@@ -21,7 +21,7 @@ public class Driver
     public static void main(String[] args) {
         Agent agent = new Agent();
         double payout = 150;
-        for(int i = 0; i < 10; i++){
+        for(int i = 0; i < 20; i++){
             payout = agent.play(payout, 1);
             if(payout<50){
                 break;
