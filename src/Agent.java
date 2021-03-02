@@ -79,7 +79,11 @@ public class Agent
                 bet = 0;
             }else {
                 outcome = "LOSS";
-                numLoss++;                
+                numLoss++;
+                if(hand.equals(Outcome.TIE)){
+                    wallet += bet/2;
+                }   
+
                 //System.out.print(hand.name() + ", " + guess + ":     " + outcome + ", " + wallet + "\n");
                 result.add(outcome);
                 if(wallet < 0){
