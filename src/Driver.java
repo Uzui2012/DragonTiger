@@ -20,10 +20,10 @@ public class Driver
     }
     public static void main(String[] args) {
         Agent agent = new Agent();
-        double payout = 150;
-        for(int i = 0; i < 10; i++){
-            payout = agent.play(payout, 1);
-            if(payout<50){
+        double payout = 50;
+        for(int i = 0; i < 100; i++){
+            payout = agent.playOneThenFiveBet(payout);
+            if(payout<25){
                 break;
             }
         }
