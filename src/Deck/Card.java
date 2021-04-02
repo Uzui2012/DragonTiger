@@ -1,3 +1,5 @@
+package Deck;
+
 public class Card
 {
     private Suit suit;

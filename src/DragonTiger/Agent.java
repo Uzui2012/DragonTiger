@@ -1,3 +1,5 @@
+package DragonTiger;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -119,7 +121,7 @@ public class Agent
             Outcome prev3 = log.get(log.size()-3);
             Outcome prev4 = log.get(log.size()-4);
             Outcome prev5 = log.get(log.size()-5);
-            if((prev1==prev2 && prev1==prev3 ) ){
+            if((prev1==prev2 && prev1==prev3) && (prev1 != prev5)){
             //|| (prev1==Outcome.TIE && prev2==prev3 && prev3==prev4 && prev5==prev4)) {
                 if(bet==0){
                     bet = betINC;

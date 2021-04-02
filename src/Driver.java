@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+import DragonTiger.Agent;
+import DragonTiger.DragonTiger;
+
 public class Driver
 {
     public static void playerPlays(DragonTiger dt){
@@ -20,13 +23,18 @@ public class Driver
     }
     public static void main(String[] args) {
         Agent agent = new Agent();
-        double payout = 50;
-        for(int i = 0; i < 100; i++){
+        double payout = 500;
+        double max = 500;
+        for(int i = 0; i < 5000000; i++){
             payout = agent.playOneThenFiveBet(payout);
-            if(payout<25){
+            if(payout<0){
                 break;
+            }
+            if( payout > max){
+                max = payout;
             }
         }
         System.out.println("IN FOR: " + 50 + "\nOUT FOR: " + (payout));
+        System.out.println("MAX: " + max);
     }
 }
